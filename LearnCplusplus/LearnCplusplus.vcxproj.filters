@@ -18,6 +18,18 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="LearnConst.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LearnTemplate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LearnPointer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cplusplus11.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -25,6 +37,18 @@
     </ClCompile>
     <ClCompile Include="LearnCplusplus.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LearnConst.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LearnTemplate.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LearnPointer.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cplusplus11.cpp">
+      <Filter>头文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
