@@ -16,24 +16,7 @@ using namespace std;
 //2. 左值持久，右值短暂，右值只能绑定到临时对象，所引用的对象将要销毁或该对象没有其他用户
 //3. 使用右值引用的代码可以自由的接管所引用对象的内容
 
-extern int g_constructCount = 0;
-extern int g_copyConstructCount = 0;
-extern int g_destructCount = 0;
-struct A {
-	A() {
-		cout << "construct:" << ++g_constructCount << endl;
-	}
-	A(const A &a) {
-		cout << "copy construct:" << ++g_copyConstructCount << endl;
-	}
-	~A() {
-		cout << "destory:" << ++g_destructCount << endl;
-	}
-};
 
-A GetA() {
-	return A();
-}
 
 int getVar();
 class R {

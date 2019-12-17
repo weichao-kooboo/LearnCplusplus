@@ -5,13 +5,19 @@
 #include <iostream>
 
 #include "Cplusplus11.h"
+#include "LearnTemplate.h"
 
 MyString Fun();
 void runRValue();
 
 int main()
 {
-	runRValue();
+	/*add1<int, float, double>(1, 1.2, 1.3);
+	tprintf("% world% %\n", "Hello", '!', 123);
+	runRValue();*/
+
+	LearnTemplate lt;
+	lt.run();
 }
 
 MyString Fun()
