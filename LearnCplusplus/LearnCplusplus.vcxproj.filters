@@ -30,6 +30,9 @@
     <ClInclude Include="Cplusplus11.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="LearnSingleton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -48,6 +51,9 @@
       <Filter>头文件</Filter>
     </ClCompile>
     <ClCompile Include="Cplusplus11.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LearnSingleton.cpp">
       <Filter>头文件</Filter>
     </ClCompile>
   </ItemGroup>

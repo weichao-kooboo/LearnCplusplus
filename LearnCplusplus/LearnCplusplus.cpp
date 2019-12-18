@@ -11,8 +11,9 @@ MyString Fun();
 void runRValue();
 
 class Mem_test{
-private:
-	int k;
+};
+class Mem_test1 {
+	int &a;
 };
 
 void exit_fn1(void) {
@@ -46,9 +47,15 @@ int main()
 	/*add1<int, float, double>(1, 1.2, 1.3);
 	tprintf("% world% %\n", "Hello", '!', 123);
 	runRValue();*/
+	cout << sizeof(Mem_test) << " " << sizeof(Mem_test1) << endl;
 
-	Mem_test mt;
-	bool value = sizeof(mt);
+	//(void)d表示d转换为void类型,并且对其丢弃
+	//ref:
+	//https://www.cnblogs.com/litifeng/p/7753933.html
+	typedef char a[1];
+	a d;
+	(void)d;
+
 	atexit_test();
 	_exit(0);
 	LearnTemplate lt;
