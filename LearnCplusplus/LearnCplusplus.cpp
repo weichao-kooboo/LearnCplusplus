@@ -3,9 +3,37 @@
 
 #include "pch.h"
 #include <iostream>
+#include <functional>
 
 #include "Cplusplus11.h"
 #include "LearnTemplate.h"
+#include "LearnSpace.h"
+
+//https://blog.csdn.net/u011068702/article/details/64443949
+//func_test的参数const需要注意,不能省略
+//c++语义限制,临时变量不能传入非const得引用
+template<typename CLASS,typename... ARGS>
+class func_test {
+public:
+	func_test(const std::function<void(CLASS*, ARGS...)>& function) :
+		function_(function) {
+
+	};
+private:
+	std::function<void(CLASS*, ARGS...)> function_;
+};
+
+template<typename CLASS,typename... ARGS>
+func_test<CLASS, ARGS...> makefunctest(void (CLASS::*function)(ARGS...)) {
+	return func_test<CLASS, ARGS...>(function);
+}
+
+class ctest{
+public:
+	void run() {
+
+	};
+};
 
 MyString Fun();
 void runRValue();
@@ -44,11 +72,19 @@ void atexit_test() {
 
 int main()
 {
+	LearnSpace::Space s;
+	LearnSpace ls1;
+	LearnSpace ls2;
+	cout << LearnSpace::kA << endl;
+	cout << ls1.kA << endl;
+	cout << ls2.kA << endl;
 	/*add1<int, float, double>(1, 1.2, 1.3);
 	tprintf("% world% %\n", "Hello", '!', 123);
 	runRValue();*/
 	cout << sizeof(Mem_test) << " " << sizeof(Mem_test1) << endl;
 
+	makefunctest(&ctest::run);
+	 
 	//(void)d表示d转换为void类型,并且对其丢弃
 	//ref:
 	//https://www.cnblogs.com/litifeng/p/7753933.html

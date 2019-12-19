@@ -157,6 +157,7 @@
     <ClInclude Include="LearnConst.h" />
     <ClInclude Include="LearnPointer.h" />
     <ClInclude Include="LearnSingleton.h" />
+    <ClInclude Include="LearnSpace.h" />
     <ClInclude Include="LearnTemplate.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
@@ -166,6 +167,7 @@
     <ClCompile Include="LearnCplusplus.cpp" />
     <ClCompile Include="LearnPointer.cpp" />
     <ClCompile Include="LearnSingleton.cpp" />
+    <ClCompile Include="LearnSpace.cpp" />
     <ClCompile Include="LearnTemplate.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
