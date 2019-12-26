@@ -201,6 +201,7 @@
     <ClInclude Include="include\evhttp.h" />
     <ClInclude Include="include\evrpc.h" />
     <ClInclude Include="include\evutil.h" />
+    <ClInclude Include="include\getopt.h" />
     <ClInclude Include="include\http.h" />
     <ClInclude Include="include\http_compat.h" />
     <ClInclude Include="include\http_struct.h" />
@@ -225,6 +226,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Cplusplus11.cpp" />
+    <ClCompile Include="include\getopt.c" />
+    <ClCompile Include="include\getopt_long.c" />
     <ClCompile Include="LearnConst.cpp" />
     <ClCompile Include="LearnCplusplus.cpp" />
     <ClCompile Include="LearnLibevent.cpp" />

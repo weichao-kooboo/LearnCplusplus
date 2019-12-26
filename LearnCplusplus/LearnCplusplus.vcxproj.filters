@@ -219,6 +219,9 @@
     <ClInclude Include="include\event2\event-config.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\getopt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -247,6 +250,12 @@
     </ClCompile>
     <ClCompile Include="LearnLibevent.cpp">
       <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\getopt.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\getopt_long.c">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
