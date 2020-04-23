@@ -222,6 +222,12 @@
     <ClInclude Include="include\getopt.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="LearnSTL.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LearnStatic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -255,6 +261,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="include\getopt_long.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LearnSTL.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

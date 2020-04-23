@@ -75,10 +75,30 @@ extern "C" {
 //	atexit(exit_fn2);
 //}
 
+#include "LearnSTL.h"
 
 int main(int argc, char **argv)
 {
-	run(argc, argv);
+
+	LearnSTL stl;
+
+	int x = -1;
+	unsigned int u = 2147483648;
+
+	printf("x=%u=%d\n", x, x);
+
+	printf("x=%u=%d\n", u, u);
+
+	unsigned short s = 65535;
+	unsigned short s1 = 65534;
+	unsigned short s2 = s + s1;
+	printf("s=%hu\n", s2);
+
+	Sleep(1000000000000000);
+	//run
+	//run(argc, argv);
+
+
 	//LearnSpace::Space s;
 	//LearnSpace ls1;
 	//LearnSpace ls2;
