@@ -4,6 +4,7 @@
 #include "pch.h"
 #include <iostream>
 #include <functional>
+#include <stdlib.h>
 
 //#include "Cplusplus11.h"
 //#include "LearnTemplate.h"
@@ -79,6 +80,17 @@ extern "C" {
 
 int main(int argc, char **argv)
 {
+	int k = 1;
+	const int &f = k;
+	printf("%d,%p,%p", f, &f, &k);
+	k = 4; 
+	printf("%d,%p", f, &f);
+
+	int a[5] = { 1,2,3,4,5 };
+	int *ptr = (int *)(&a + 1);
+	printf("%d,%d", (a + 1), *(ptr - 1));
+
+	system("pause");
 
 	LearnSTL stl;
 
